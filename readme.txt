@@ -8,11 +8,11 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Displays the shipping and/or billing information for a specific user in a shortcode.
+Displays formatted copy of Woo Commerce Shipping and/or Billing information in a shortcode.
 
 == Description ==
 
-Displays the shipping and/or billing information for a specific user in a shortcode.
+Displays formatted copy of Woo Commerce Shipping and/or Billing information in a shortcode.
 
 The following shortcodes can be used:
  [billing_info] 

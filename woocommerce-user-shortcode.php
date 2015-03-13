@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WooCommerce User Shortcode
-Description: Displays formatted copy of Woo Commerce Shipping information
+Description: Displays formatted copy of Woo Commerce Shipping and/or Billing information in a shortcode.
 Author: Richard Miles
 Version: 1.0
 Author URI: http://richymiles.wordpress.com

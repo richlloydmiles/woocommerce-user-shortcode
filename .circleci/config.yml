@@ -38,4 +38,4 @@ workflows:
     - pull-request-job:
         filters:
           branches:
-            - circleci
+            only: circleci

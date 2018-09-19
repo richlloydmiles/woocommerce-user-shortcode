@@ -12,10 +12,10 @@ base: &base
 # common : steps
 # --------------------------------
 
-step_run_tests: &step_run_tests
+install_svn: &install_svn
   name: 'Run tests'
   command: |
-    ls
+    sudo apt-get install subversion
 
 # --------------------------------
 # common : jobs
@@ -25,7 +25,7 @@ jobs:
     <<: *base
     steps:
     - checkout
-    - run: *step_run_tests
+    - run: *install_svn
 
 # --------------------------------
 # workflows
@@ -38,5 +38,4 @@ workflows:
     - pull-request-job:
         filters:
           branches:
-            ignore:
-            - circl
+            - circleci

@@ -15,7 +15,7 @@ Displays formatted copy of Woo Commerce Shipping and/or Billing information in a
 Displays formatted copy of Woo Commerce Shipping and/or Billing information in a shortcode.
 
 The following shortcodes can be used:
- [billing_info] 
+ [billing_info]
  [shipping_info]
 
  if the "id" parameter is added (e.g. [billing_info id="1"] ), that users information will be displayed.
@@ -39,3 +39,4 @@ The following shortcodes can be used:
 == Changelog ==
 = 1.0 =
 * First Version, Basic Working copy
+* svn test

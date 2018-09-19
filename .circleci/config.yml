@@ -1,0 +1,42 @@
+version: 2
+
+# --------------------------------
+# common : base
+# --------------------------------
+
+base: &base
+  docker:
+  - image: circleci/php:7.1-node-browsers
+
+# --------------------------------
+# common : steps
+# --------------------------------
+
+step_run_tests: &step_run_tests
+  name: 'Run tests'
+  command: |
+    ls
+
+# --------------------------------
+# common : jobs
+# --------------------------------
+jobs:
+  pull-request-job:
+    <<: *base
+    steps:
+    - checkout
+    - run: *step_run_tests
+
+# --------------------------------
+# workflows
+# --------------------------------
+
+workflows:
+  version: 2
+  build:
+    jobs:
+    - pull-request-job:
+        filters:
+          branches:
+            ignore:
+            - circle

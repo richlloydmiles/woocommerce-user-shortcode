@@ -15,7 +15,7 @@ base: &base
 install_svn: &install_svn
   name: 'Run tests'
   command: |
-    sudo apt-get install subversion
+    apt-get install subversion
 
 # --------------------------------
 # common : jobs
